@@ -1,0 +1,92 @@
+{% load static %}
+{% load i18n %}
+
+<nav class="bg-gray-300 border-gray-200 py-2.5 rounded dark:bg-slate-900">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap items-center justify-between">
+            <a href="{% url 'main:index' %}" class="flex items-center">
+                {% if is_dark_theme %}
+                    <div class="relative rounded-t-lg overflow-hidden">
+                        <img src="{% static 'notary/logo/logo-feather-white-crop.PNG' %}"
+                             class="w-16 h-16 hover:animate-pulse object-cover"/>
+                    </div>
+                {% else %}
+                    <div class="relative rounded-t-lg overflow-hidden">
+                        <img src="{% static "notary/logo/logo-feather-dark-crop.PNG" %}"
+                             class="w-16 h-16 hover:animate-pulse object-cover"/>
+                    </div>
+                {% endif %}
+                <div class="self-center text-xl p-5 font-semibold whitespace-nowrap dark:text-white">
+                    {{ notary.name }} {{ notary.surname }}
+                </div>
+            </a>
+            <button data-collapse-toggle="navbar-default"
+                    type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default"
+                    aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6"
+                     aria-hidden="true"
+                     fill="currentColor"
+                     viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd">
+                    </path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="nav-ul-set">
+                    <li>
+                        <a href="{% url 'main:index' %}"
+                           class="block py-5 pl-3 pr-6 text-white bg-blue-700 dark:bg-blue-900 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-teal-400 dark:md:bg-transparent motion-safe:hover:animate-pulse text-base"
+                           aria-current="page">{% trans "Home" %}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'main:index' %}#About" class="nav-item-control text-base">{% trans " About" %}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'main:index' %}#Services" class="nav-item-control text-base">{% trans "Services" %}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'main:contact' %}" class="nav-item-control text-base">{% trans "Contact Me" %}</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center border-l border-slate-200 pl-6 dark:border-slate-700">
+                            <a href="{% url "main:change-theme" %}">
+                                {% if is_dark_theme %}
+                                    <i class="fa-solid fa-sun fa-xl img-rt img-rt:hover mt-4"></i>
+                                {% else %}
+                                    <i class="fa-solid fa-moon fa-xl img-rt img-rt:hover mt-4"></i>
+                                {% endif %}
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <form action="{% url 'main:set-lang' %}"
+                              method="post"
+                              class="justify-end">
+                            {% csrf_token %}
+                            <input type="hidden" name="next">
+                            <select name="language"
+                                    onchange="this.form.submit()"
+                                    class="bg-white dark:bg-gray-900 rounded-lg py-1 px-5 text-base leading-5 font-medium text-gray-700 hover:text-gray-500 dark:text-white dark:hover:text-white active:bg-gray-50 active:text-gray-800">
+                                {% get_current_language as LANGUAGE_CODE %}
+                                {% get_available_languages as LANGUAGES %}
+                                {% get_language_info_list for LANGUAGES as languages %}
+                                {% for language in languages %}
+                                    <option value="{{ language.code }}"
+                                            {% if language.code == LANGUAGE_CODE %}
+                                                selected
+                                            {% endif %}>
+                                        {{ language.name_local }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

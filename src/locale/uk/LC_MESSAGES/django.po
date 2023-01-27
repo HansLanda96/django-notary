@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-23 11:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: app/settings.py:128
+msgid "English"
+msgstr "Англійська"
+
+#: app/settings.py:129
+msgid "Ukranian"
+msgstr "Українська"
+
+#: templates/contact_me.html:10
+msgid "Contact Us"
+msgstr "Зв'яжіться зі мною"
+
+#: templates/contact_me.html:12
+msgid "Any questions?"
+msgstr "Залишились питання?"
+
+#: templates/contact_me.html:23
+msgid "Name"
+msgstr "Ім'я"
+
+#: templates/contact_me.html:30
+msgid "Email"
+msgstr "Email"
+
+#: templates/contact_me.html:37
+msgid "Message"
+msgstr "Повідомлення"
+
+#: templates/contact_me.html:43
+msgid "Send Message"
+msgstr "Надіслати Повідомлення"
+
+#: templates/contact_me.html:49
+msgid "Back"
+msgstr "На головну"
+
+#: templates/index.html:16
+msgid "Private notary"
+msgstr "Приватний нотаріус"
+
+#: templates/index.html:17
+msgid "Kiyv city notary district"
+msgstr "Київський міський нотаріальний округ"
+
+#: templates/index.html:19
+msgid "Contact Information:"
+msgstr "Контактні дані:"
+
+#: templates/index.html:50
+msgid "Lva Tolstogo str. 25/18 off.1"
+msgstr "вул.Льва Толстого, буд.25/18, оф.1"
+
+#: templates/index.html:63
+msgid "Services provided"
+msgstr "Послуги"
+
+#: templates/index.html:78
+msgid "Read More"
+msgstr "Дізнатись більше"
+
+#: templates/partials/footer.html:5
+msgid "Private notary of Kyiv Oleksandra Marchenko"
+msgstr "Приватний нотаріус міста Києва Олександра Марченко"
+
+#: templates/partials/footer.html:5
+msgid "All rights reserved"
+msgstr "Всі права застережені"
+
+#: templates/partials/navbar.html:43
+msgid "Home"
+msgstr "Головна"
+
+#: templates/partials/navbar.html:46
+msgid " About"
+msgstr "Про Нотаріуса"
+
+#: templates/partials/navbar.html:49
+msgid "Services"
+msgstr "Послуги"
+
+#: templates/partials/navbar.html:52
+msgid "Contact Me"
+msgstr "Зв'язатися зі мною"
+
+#: templates/types.html:8
+msgid "Notarial and registration actions"
+msgstr "Нотаріальни та реєстраційні дії"
+
+#: templates/types.html:11
+msgid ""
+"We perform all types of notarial acts for individuals and legal entities."
+msgstr ""
+"Ми здійснюємо всі види нотаріальних дій для фізичних та юридичних осіб."
+
+#: templates/types.html:16
+msgid "Notarial acts"
+msgstr "Нотаріальні дії"
+
+#: templates/types.html:19
+msgid "Certification of transactions:"
+msgstr "Посвідчення правочинів:"
+
+#: templates/types.html:22
+msgid ""
+"Preliminary contracts of sale and purchase of real estate/movable property;"
+msgstr "Попередні договори купівлі-продажу нерухомого/рухомого майна;"
+
+#: templates/types.html:24
+msgid "Contracts of sale and purchase of immovable/movable property;"
+msgstr "Договори купівлі-продажу нерухомого/рухомого майна;"
+
+#: templates/types.html:25
+msgid "Contracts of the gift of immovable/movable property;"
+msgstr "Договори дарування нерухомого/рухомого майна;"
+
+#: templates/types.html:26
+msgid "Contracts of exchange of property;"
+msgstr "Договори міни майна;"
+
+#: templates/types.html:27
+msgid "Pledge agreements;"
+msgstr "Договори застави;"
+
+#: templates/types.html:29
+msgid "Mortgage agreements (including property rights mortgage agreements);"
+msgstr "Договори іпотеки (в тому числі договори іпотеки майнових права);"
+
+#: templates/types.html:31
+msgid "Loan agreements;"
+msgstr "Договори позики;"
+
+#: templates/types.html:32
+msgid "Agreements on assignment of the right of claim;"
+msgstr "Договори про відступлення права вимоги;"
+
+#: templates/types.html:33
+msgid "Debt transfer agreements;"
+msgstr "Договори про переведення боргу;"
+
+#: templates/types.html:34
+msgid "Contracts of assignment;"
+msgstr "Договори доручення;"
+
+#: templates/types.html:36
+msgid "Management of inheritance cases;"
+msgstr "Ведення спадкових справ;"
+
+#: templates/types.html:37
+msgid "Issuance of a certificate of inheritance;"
+msgstr "Видача свідоцтва про право на спадщину;"
+
+#: templates/types.html:39
+msgid ""
+"Issuance of a certificate of ownership of a share in the joint property of "
+"spouses in case of death of one of the spouses;"
+msgstr ""
+"Видача свідоцтва про право власності на частку в спільному майні подружжя в "
+"разі смерті одного з подружжя;"
+
+#: templates/types.html:42
+msgid ""
+"Issuance of a certificate of purchase of property at public auction "
+"(auctions);"
+msgstr "Видача свідоцтва про придбання майна з прилюдних торгів (аукціонів);"
+
+#: templates/types.html:45
+msgid ""
+"Issuance of a certificate of purchase of property at public auction, if the "
+"public auction did not take place;"
+msgstr ""
+"Видача свідоцтва про придбання майна з прилюдних торгів (аукціонів), якщо "
+"прилюдні торги (аукціони) не відбулися;"
+
+#: templates/types.html:48
+msgid "Issuing duplicates of notarial documents kept in thenotary's files;"
+msgstr ""
+"Видача дублікатів нотаріальних документів, що зберігаються у справах "
+"нотаріуса;"
+
+#: templates/types.html:51
+msgid ""
+"Imposing and lifting the ban on the alienation of real estate (property "
+"rights to real estate) and vehicles subject to state registration;"
+msgstr ""
+"Накладення та зняття заборони щодо відчуження нерухомого майна (майнових "
+"прав на нерухоме майно) і транспортних засобів, що підлягають державній "
+"реєстрації;"
+
+#: templates/types.html:54
+msgid ""
+"Certification of authenticity of copies (photocopies) of documents and "
+"extracts from them;"
+msgstr "Засвідчення вірності копій (фотокопій) документів і виписок з них;"
+
+#: templates/types.html:57
+msgid ""
+"Certification of authenticity of a signature on documents (applications, "
+"constituent documents, affidavits);"
+msgstr ""
+"Засвідчення справжністі підпису на документах (заявах, установчих "
+"документах, афідевітах);"
+
+#: templates/types.html:60
+msgid ""
+"Certification of translation of documents from one language into another;"
+msgstr "Засвідчення вірності перекладу документів з однієї мови на іншу;"
+
+#: templates/types.html:62
+msgid "Certification of the fact that an individual is alive;"
+msgstr "Посвідчення факту, що фізична особа є живою;"
+
+#: templates/types.html:64
+msgid "Certification of the fact of an individual's stay in a certain place;"
+msgstr "Посвідчення факту перебування фізичної особи в певному місці;"
+
+#: templates/types.html:67
+msgid ""
+"Transfer of applications of individuals and legal entities to other "
+"individuals and legal entities;"
+msgstr ""
+"Передача заяви фізичних та юридичних осіб іншим фізичним та юридичним особам;"
+
+#: templates/types.html:70
+msgid "Execution of executive inscriptions;"
+msgstr "Вчинення виконавчих написів;"
+
+#: templates/types.html:73
+msgid "Protest of bills of exchange;"
+msgstr "Вчинення протесту векселів;"
+
+#: templates/types.html:76
+msgid "Wills;"
+msgstr "Заповіти;"
+
+#: templates/types.html:79
+msgid "Powers of attorney;"
+msgstr "Довіреності;"
+
+#: templates/types.html:82
+msgid "Consent to the alienation of property, etc;"
+msgstr "Згода на відчудження майна, тощо;"
+
+#: templates/types.html:85
+msgid "And other notarial acts stipulated by the law."
+msgstr "Та інші нотаріальні дії, закріплені законодавством."
+
+#: templates/types.html:92
+msgid "Apostilization"
+msgstr "Апостилювання"
+
+#: templates/types.html:96
+msgid ""
+"Apostille affixing for submission of documents issued in Ukraine in any "
+"country of the world."
+msgstr ""
+"Проставлення апостилю для надання документів, виданих в Україні у будь-якій "
+"країні світу."
+
+#: templates/types.html:103
+msgid "Registration actions"
+msgstr "Реєстраційні дії"
+
+#: templates/types.html:107
+msgid ""
+"Registration of rights to real estate in the State Register of Real Property "
+"Rights."
+msgstr ""
+"Реєстрація прав на нерухоме майно в Державному реєстрі речових прав на "
+"нерухоме майно"
+
+#: templates/types.html:110
+msgid "Registration, termination of encumbrances."
+msgstr "Реєстрація, припинення обтяжень"
+
+#: templates/types.html:113
+msgid "Obtaining information from the State Register of Real Property Rights."
+msgstr ""
+"Отримання інформації з Державного реєстру речових прав на нерухоме майно"
+
+#: templates/types.html:116
+msgid ""
+"Making changes to real estate in the State Register of Real Property Rights "
+"to Real Estate."
+msgstr ""
+"Внесення змін щодо нерухомого майна до Державного реєстру речових прав на "
+"нерухоме майно"
+
+#: templates/types.html:119
+msgid "Registration of legal entities."
+msgstr "Реєстрація юридичних осіб"
+
+#: templates/types.html:122
+msgid ""
+"Making changes to the Unified State Register of Legal Entities, Individual "
+"Entrepreneurs and Public Organizations."
+msgstr ""
+"Внесення змін до Єдиного державного реєстру юридичніх осіб, фізичних осіб-"
+"підприємців та громадських формувань. "
+
+#: templates/types.html:125
+msgid "Liquidation of legal entities."
+msgstr "Ліквідація юридичних осіб "
+
+#: templates/types.html:128
+msgid ""
+"Obtaining information from the Unified State Register of Legal Entities, "
+"Individual Entrepreneurs, and Public Organizations."
+msgstr ""
+"Отримання інформації з Єдиного державного реєстру юридичних осіб, фізичних "
+"осіб-підприємців та громадських формувань"

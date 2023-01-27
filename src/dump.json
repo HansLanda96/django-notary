@@ -1,0 +1,84 @@
+[
+{
+   "model": "main.notaryprofile",
+   "pk": 1,
+   "fields": {
+      "notary": 1,
+      "photo": "images/notary/photo-alexa_4EEvaWm.jpg",
+      "name": "Олександра",
+      "name_en": "Oleksandra",
+      "name_uk": "Олександра",
+      "surname": "Марченко",
+      "surname_en": "Marchenko",
+      "surname_uk": "Марченко",
+      "description": "<p>Марченко Олександра Михайлівна - приватний нотаріус Київського міського нотаріального округу. Має понад 20 років досвіду роботи нотаріусом. Досвідчений фахівець завжди допоможе вирішити будь-які питання, пов&#39;язані з нотаріальною практикою, реєстрацією юридичних осіб, прав на нерухоме майно та апостилюванням документів.</p>",
+      "description_en": "<p>Marchenko Oleksandra Mykhailivna is a private notary of the Kyiv City Notarial District. She has over 20 years of experience as a notary. An experienced specialist will always help to resolve any issues related to notarial practice, registration of legal entities, rights to real estate and apostillization of documents.</p>",
+      "description_uk": "<p>Марченко Олександра Михайлівна - приватний нотаріус Київського міського нотаріального округу. Має понад 20 років досвіду роботи нотаріусом. Досвідчений фахівець завжди допоможе вирішити будь-які питання, пов&#39;язані з нотаріальною практикою, реєстрацією юридичних осіб, прав на нерухоме майно та апостилюванням документів.</p>"
+   }
+},
+{
+   "model": "main.notaryservice",
+   "pk": 1,
+   "fields": {
+      "notary": 1,
+      "service_title": "Нотаріальні дії",
+      "service_title_en": "Notary acts",
+      "service_title_uk": "Нотаріальні дії",
+      "service_description": "<p>Вчинення усіх видів нотаріальних дій</p>",
+      "service_description_en": "<p>Performing all types of notarial acts</p>",
+      "service_description_uk": "<p>Вчинення усіх видів нотаріальних дій</p>",
+      "service_img": "fa-stamp",
+      "service_link": "types/#notary-acts",
+      "order_num": 1,
+      "is_active": true
+   }
+},
+{
+   "model": "main.notaryservice",
+   "pk": 2,
+   "fields": {
+      "notary": 1,
+      "service_title": "Апостилізація",
+      "service_title_en": "Apostillation",
+      "service_title_uk": "Апостилізація",
+      "service_description": "<p>Легалізація документів за кордон</p>",
+      "service_description_en": "<p>Legalizing documents abroad</p>",
+      "service_description_uk": "<p>Легалізація документів за кордон</p>",
+      "service_img": "fa-passport",
+      "service_link": "types/#apostil",
+      "order_num": 2,
+      "is_active": true
+   }
+},
+{
+   "model": "main.notaryservice",
+   "pk": 3,
+   "fields": {
+      "notary": 1,
+      "service_title": "Реєстраційні дії",
+      "service_title_en": "Registration Actions",
+      "service_title_uk": "Реєстраційні дії",
+      "service_description": "<p>Реєстрація нерухомості та юридичних осіб</p>",
+      "service_description_en": "<p>Real estate and legal entities registration</p>",
+      "service_description_uk": "<p>Реєстрація нерухомості та юридичних осіб</p>",
+      "service_img": "fa-landmark",
+      "service_link": "types/#register",
+      "order_num": 3,
+      "is_active": true
+   }
+},
+{
+   "model": "main.notarycontact",
+   "pk": 1,
+   "fields": {
+      "notary": 1,
+      "phone": "098 709 0808",
+      "email": "3361@ukr.net",
+      "telegram": "https://t.me/Notary_OMarchenko",
+      "whatsapp": "https://wa.me/380675153949",
+      "viber": "viber://chat?number=%2B380675153949",
+      "mapurl": "https://goo.gl/maps/hcWZJ6CHFhG6eigS6",
+      "is_active": true
+   }
+}
+]

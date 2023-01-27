@@ -1,0 +1,41 @@
+{% load compress %}
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en" class="{% if is_dark_theme %}dark{% endif %} font-sans">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Нотаріус Марченко Олександра</title>
+        <link rel="stylesheet"
+              href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+              rel="stylesheet">
+        {% compress css %}
+            <link rel="stylesheet" href="{% static 'src/output.css' %}">
+        {% endcompress %}
+        <script src="https://kit.fontawesome.com/a857cb5b1e.js"
+                crossorigin="anonymous"></script>
+    </head>
+    <body class="mt-15 mb-20 bg-white dark:bg-slate-900 text-black dark:text-gray-50"
+          style="font-family: 'Source Sans Pro', 'sans-serif'">
+
+        {% include "partials/navbar.html" %}
+        {% include "partials/messages.html" %}
+
+        {% block content %}
+        {% endblock content %}
+
+        {% include "partials/footer.html" %}
+
+        <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+        <script src={% static 'js/smoothScroll.js' %}></script>
+        <script src={% static 'js/mssgContainer.js' %}></script>
+        <script src={% static 'js/mssgContainerEnd.js' %}></script>
+        <script src={% static 'js/anim.js' %}></script>
+    </body>
+</html>

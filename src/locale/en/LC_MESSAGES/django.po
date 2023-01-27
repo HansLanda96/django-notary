@@ -1,0 +1,306 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-23 11:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app/settings.py:128
+msgid "English"
+msgstr ""
+
+#: app/settings.py:129
+msgid "Ukranian"
+msgstr ""
+
+#: templates/contact_me.html:10
+msgid "Contact Us"
+msgstr ""
+
+#: templates/contact_me.html:12
+msgid "Any questions?"
+msgstr ""
+
+#: templates/contact_me.html:23
+msgid "Name"
+msgstr ""
+
+#: templates/contact_me.html:30
+msgid "Email"
+msgstr ""
+
+#: templates/contact_me.html:37
+msgid "Message"
+msgstr ""
+
+#: templates/contact_me.html:43
+msgid "Send Message"
+msgstr ""
+
+#: templates/contact_me.html:49
+msgid "Back"
+msgstr ""
+
+#: templates/index.html:16
+msgid "Private notary"
+msgstr ""
+
+#: templates/index.html:17
+msgid "Kiyv city notary district"
+msgstr ""
+
+#: templates/index.html:19
+msgid "Contact Information:"
+msgstr ""
+
+#: templates/index.html:50
+msgid "Lva Tolstogo str. 25/18 off.1"
+msgstr ""
+
+#: templates/index.html:63
+msgid "Services provided"
+msgstr ""
+
+#: templates/index.html:78
+msgid "Read More"
+msgstr ""
+
+#: templates/partials/footer.html:5
+msgid "Private notary of Kyiv Oleksandra Marchenko"
+msgstr ""
+
+#: templates/partials/footer.html:5
+msgid "All rights reserved"
+msgstr ""
+
+#: templates/partials/navbar.html:43
+msgid "Home"
+msgstr ""
+
+#: templates/partials/navbar.html:46
+msgid " About"
+msgstr ""
+
+#: templates/partials/navbar.html:49
+msgid "Services"
+msgstr ""
+
+#: templates/partials/navbar.html:52
+msgid "Contact Me"
+msgstr ""
+
+#: templates/types.html:8
+msgid "Notarial and registration actions"
+msgstr ""
+
+#: templates/types.html:11
+msgid ""
+"We perform all types of notarial acts for individuals and legal entities."
+msgstr ""
+
+#: templates/types.html:16
+msgid "Notarial acts"
+msgstr ""
+
+#: templates/types.html:19
+msgid "Certification of transactions:"
+msgstr ""
+
+#: templates/types.html:22
+msgid ""
+"Preliminary contracts of sale and purchase of real estate/movable property;"
+msgstr ""
+
+#: templates/types.html:24
+msgid "Contracts of sale and purchase of immovable/movable property;"
+msgstr ""
+
+#: templates/types.html:25
+msgid "Contracts of the gift of immovable/movable property;"
+msgstr ""
+
+#: templates/types.html:26
+msgid "Contracts of exchange of property;"
+msgstr ""
+
+#: templates/types.html:27
+msgid "Pledge agreements;"
+msgstr ""
+
+#: templates/types.html:29
+msgid "Mortgage agreements (including property rights mortgage agreements);"
+msgstr ""
+
+#: templates/types.html:31
+msgid "Loan agreements;"
+msgstr ""
+
+#: templates/types.html:32
+msgid "Agreements on assignment of the right of claim;"
+msgstr ""
+
+#: templates/types.html:33
+msgid "Debt transfer agreements;"
+msgstr ""
+
+#: templates/types.html:34
+msgid "Contracts of assignment;"
+msgstr ""
+
+#: templates/types.html:36
+msgid "Management of inheritance cases;"
+msgstr ""
+
+#: templates/types.html:37
+msgid "Issuance of a certificate of inheritance;"
+msgstr ""
+
+#: templates/types.html:39
+msgid ""
+"Issuance of a certificate of ownership of a share in the joint property of "
+"spouses in case of death of one of the spouses;"
+msgstr ""
+
+#: templates/types.html:42
+msgid ""
+"Issuance of a certificate of purchase of property at public auction "
+"(auctions);"
+msgstr ""
+
+#: templates/types.html:45
+msgid ""
+"Issuance of a certificate of purchase of property at public auction, if the "
+"public auction did not take place;"
+msgstr ""
+
+#: templates/types.html:48
+msgid "Issuing duplicates of notarial documents kept in thenotary's files;"
+msgstr ""
+
+#: templates/types.html:51
+msgid ""
+"Imposing and lifting the ban on the alienation of real estate (property "
+"rights to real estate) and vehicles subject to state registration;"
+msgstr ""
+
+#: templates/types.html:54
+msgid ""
+"Certification of authenticity of copies (photocopies) of documents and "
+"extracts from them;"
+msgstr ""
+
+#: templates/types.html:57
+msgid ""
+"Certification of authenticity of a signature on documents (applications, "
+"constituent documents, affidavits);"
+msgstr ""
+
+#: templates/types.html:60
+msgid ""
+"Certification of translation of documents from one language into another;"
+msgstr ""
+
+#: templates/types.html:62
+msgid "Certification of the fact that an individual is alive;"
+msgstr ""
+
+#: templates/types.html:64
+msgid "Certification of the fact of an individual's stay in a certain place;"
+msgstr ""
+
+#: templates/types.html:67
+msgid ""
+"Transfer of applications of individuals and legal entities to other "
+"individuals and legal entities;"
+msgstr ""
+
+#: templates/types.html:70
+msgid "Execution of executive inscriptions;"
+msgstr ""
+
+#: templates/types.html:73
+msgid "Protest of bills of exchange;"
+msgstr ""
+
+#: templates/types.html:76
+msgid "Wills;"
+msgstr ""
+
+#: templates/types.html:79
+msgid "Powers of attorney;"
+msgstr ""
+
+#: templates/types.html:82
+msgid "Consent to the alienation of property, etc;"
+msgstr ""
+
+#: templates/types.html:85
+msgid "And other notarial acts stipulated by the law."
+msgstr ""
+
+#: templates/types.html:92
+msgid "Apostilization"
+msgstr ""
+
+#: templates/types.html:96
+msgid ""
+"Apostille affixing for submission of documents issued in Ukraine in any "
+"country of the world."
+msgstr ""
+
+#: templates/types.html:103
+msgid "Registration actions"
+msgstr ""
+
+#: templates/types.html:107
+msgid ""
+"Registration of rights to real estate in the State Register of Real Property "
+"Rights."
+msgstr ""
+
+#: templates/types.html:110
+msgid "Registration, termination of encumbrances."
+msgstr ""
+
+#: templates/types.html:113
+msgid "Obtaining information from the State Register of Real Property Rights."
+msgstr ""
+
+#: templates/types.html:116
+msgid ""
+"Making changes to real estate in the State Register of Real Property Rights "
+"to Real Estate."
+msgstr ""
+
+#: templates/types.html:119
+msgid "Registration of legal entities."
+msgstr ""
+
+#: templates/types.html:122
+msgid ""
+"Making changes to the Unified State Register of Legal Entities, Individual "
+"Entrepreneurs and Public Organizations."
+msgstr ""
+
+#: templates/types.html:125
+msgid "Liquidation of legal entities."
+msgstr ""
+
+#: templates/types.html:128
+msgid ""
+"Obtaining information from the Unified State Register of Legal Entities, "
+"Individual Entrepreneurs, and Public Organizations."
+msgstr ""

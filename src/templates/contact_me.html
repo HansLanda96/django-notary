@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+    <section class="bg-white dark:bg-slate-700 rounded-lg py-10 px-4 mx-auto max-w-screen-md animated">
+        <div class="text-center">
+            <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white">{% trans "Contact Us" %}</h2>
+            <p class="mb-4 lg:mb-16 font-light text-gray-500 dark:text-gray-300 sm:text-xl">
+                {% trans "Any questions?" %}
+            </p>
+        </div>
+        <form action="/contact/"
+              class="space-y-8 qwa"
+              method="POST"
+              id='contactForm'>
+            {% csrf_token %}
+            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 mb-4">
+                <label for="name"
+                       class="text-sm font-medium text-gray-900 dark:text-gray-300">
+                    {% trans "Name" %}
+                </label>
+                {{ form.name }}
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 mb-4">
+                <label for="email"
+                       class="text-sm font-medium text-gray-900 dark:text-gray-300">
+                    {% trans "Email" %}
+                </label>
+                {{ form.email }}
+            </div>
+            <div class="flex flex-col mb-4">
+                <label for="message"
+                       class="text-sm font-medium text-gray-900 dark:text-gray-300 mb-2">
+                    {% trans "Message" %}
+                </label>
+                {{ form.message }}
+            </div>
+            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-teal-500 group-hover:from-purple-600 group-hover:to-teal-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-teal-800">
+                <input type="submit"
+                       value={% trans "Send Message" %}
+                       class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            </button>
+            <button type="button"
+                    class="relative inline-flex items-center justify-center p-0.5 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                <a href="{% url 'main:index' %}"
+                   class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">{% trans "Back" %}</a>
+            </button>
+        </form>
+    </div>
+</section>
+{% endblock content %}

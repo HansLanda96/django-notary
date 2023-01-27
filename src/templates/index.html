@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container pt-10 mx-auto mt-auto animated" id="About">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="max-h-380 md:h-380">
+                <img class="object-cover object-center rounded-3xl"
+                     src="{{ notary.photo.url }}"
+                     alt="">
+            </div>
+            <div class="bg-white dark:bg-slate-900">
+                <div class="p-5 mb-auto mt-auto max-w-lg max-h-screen">
+                    <div class="text-3xl uppercase mt-10">{{ notary.surname }} {{ notary.name }}</div>
+                    <div class="font-semibold mb-1">{% trans "Private notary" %}</div>
+                    <div class="font-semibold mb-5">{% trans "Kiyv city notary district" %}</div>
+                    <div class="font-medium">{{ notary.description|safe }}</div>
+                    <div class="text-xl uppercase font-semibold mt-10 mb-5">{% trans "Contact Information:" %}</div>
+                    <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+                        {% for contact in contacts  %}
+                            <div class="font-medium">
+                                <i class="fa-solid fa-phone fa-2xl mr-2"></i>
+                                <span class="font-semibold">
+                                    <a href="tel:{{ contact.phone }}">
+                                        <button type="button"
+                                                class="text-white bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-md px-3 py-2 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-blue-800">
+                                            {{ contact.phone }}
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="font-medium">
+                                <i class="fa-solid fa-envelope fa-2xl mr-2"></i>
+                                <span class="font-semibold">
+                                    <a href="mailto:{{ contact.email }}">
+                                        <button type="button"
+                                                class="text-white bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-md px-3 py-2 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-blue-800">
+                                            {{ contact.email }}
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="font-medium">
+                                <i class="fa-solid fa-location-dot fa-2xl mr-3.5"></i>
+                                <span class="font-semibold">
+                                    <a href="{{ contact.mapurl }}" target="_blank">
+                                        <button type="button"
+                                                class="text-white bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-md px-3 py-2 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-blue-800">
+                                            {% trans "Lva Tolstogo str. 25/18 off.1" %}
+                                        </button>
+                                    </a>
+                                </span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg-white dark:bg-slate-900 animated" id="Services">
+        <div class="container py-12 px-4 mx-auto flex flex-wrap justify-center items-center bg-white dark:bg-slate-900">
+            <div class="w-full text-center text-2xl font-semibold text-gray-900 dark:text-white mb-8">
+                {% trans "Services provided" %}
+            </div>
+            {% for service in object_list %}
+                <div class="w-full sm:w-1/3 lg:w-1/3 xl:w-1/3 p-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg dark:bg-gray-800">
+                        <div class="p-6">
+                            <i class="fa-solid {{ service.service_img }} fa-3x text-blue-500 dark:text-teal-500"></i>
+                            <div class="pt-4 text-2xl text-center text-gray-900 dark:text-white">
+                                {{ service.service_title }}
+                            </div>
+                            <div class="text-gray-500 text-center dark:text-gray-400 pt-2">
+                                {{ service.service_description|safe }}
+                            </div>
+                            <div class="pt-4 text-center">
+                                <a href="{{ service.service_link }}"
+                                   class="bg-blue-400 hover:bg-blue-500 text-white font-medium py-2 px-4 rounded-lg dark:bg-teal-600 dark:hover:bg-teal-700">
+                                    {% trans "Read More" %}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock content %}

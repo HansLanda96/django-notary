@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    <div class="container mx-auto px-4 animated-text fadeIn">
+        <h1 class="text-3xl font-bold text-center mt-8">
+            {% trans "Notarial and registration actions" %}
+        </h1>
+        <p class="text-lg text-center mt-2">
+            {% trans "We perform all types of notarial acts for individuals and legal entities." %}
+        </p>
+        <div class="my-8">
+            <h2 class="text-3xl font-bold text-blue-500 dark:text-teal-600"
+                id="notary-acts">
+                {% trans "Notarial acts" %}
+            </h2>
+            <ul class="list-disc pl-4 text-xl font-bold mt-2">
+                <li class="p-1">{% trans "Certification of transactions:" %}</li>
+                <ul class="list-disc pl-4">
+                    <li class="p-1">
+                        {% trans "Preliminary contracts of sale and purchase of real estate/movable property;" %}
+                    </li>
+                    <li class="p-1">{% trans "Contracts of sale and purchase of immovable/movable property;" %}</li>
+                    <li class="p-1">{% trans "Contracts of the gift of immovable/movable property;" %}</li>
+                    <li class="p-1">{% trans "Contracts of exchange of property;" %}</li>
+                    <li class="p-1">{% trans "Pledge agreements;" %}</li>
+                    <li class="p-1">
+                        {% trans "Mortgage agreements (including property rights mortgage agreements);" %}
+                    </li>
+                    <li class="p-1">{% trans "Loan agreements;" %}</li>
+                    <li class="p-1">{% trans "Agreements on assignment of the right of claim;" %}</li>
+                    <li class="p-1">{% trans "Debt transfer agreements;" %}</li>
+                    <li class="p-1">{% trans "Contracts of assignment;" %}</li>
+                </ul>
+                <li class="p-1">{% trans "Management of inheritance cases;" %}</li>
+                <li class="p-1">{% trans "Issuance of a certificate of inheritance;" %}</li>
+                <li class="p-1">
+                    {% trans "Issuance of a certificate of ownership of a share in the joint property of spouses in case of death of one of the spouses;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Issuance of a certificate of purchase of property at public auction (auctions);" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Issuance of a certificate of purchase of property at public auction, if the public auction did not take place;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Issuing duplicates of notarial documents kept in thenotary's files;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Imposing and lifting the ban on the alienation of real estate (property rights to real estate) and vehicles subject to state registration;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Certification of authenticity of copies (photocopies) of documents and extracts from them;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Certification of authenticity of a signature on documents (applications, constituent documents, affidavits);" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Certification of translation of documents from one language into another;" %}
+                </li>
+                <li class="p-1">{% trans "Certification of the fact that an individual is alive;" %}</li>
+                <li class="p-1">
+                    {% trans "Certification of the fact of an individual's stay in a certain place;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Transfer of applications of individuals and legal entities to other individuals and legal entities;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Execution of executive inscriptions;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Protest of bills of exchange;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Wills;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Powers of attorney;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "Consent to the alienation of property, etc;" %}
+                </li>
+                <li class="p-1">
+                    {% trans "And other notarial acts stipulated by the law." %}
+                </li>
+            </ul>
+        </div>
+        <div class="my-8">
+            <h2 class="text-3xl font-semibold text-blue-500 dark:text-teal-600"
+                id="apostil">
+                {% trans "Apostilization" %}
+            </h2>
+            <ul class="list-disc pl-4 text-xl mt-2 font-bold">
+                <li class="p-1">
+                    {% trans "Apostille affixing for submission of documents issued in Ukraine in any country of the world." %}
+                </li>
+            </ul>
+        </div>
+        <div class="my-8">
+            <h2 class="text-3xl font-semibold text-blue-500 dark:text-teal-600"
+                id="register">
+                {% trans "Registration actions" %}
+            </h2>
+            <ul class="list-disc text-xl mt-2 pl-4 font-bold pb-5">
+                <li class="p-1">
+                    {% trans "Registration of rights to real estate in the State Register of Real Property Rights." %}
+                </li>
+                <li class="p-1">
+                    {% trans "Registration, termination of encumbrances." %}
+                </li>
+                <li class="p-1">
+                    {% trans "Obtaining information from the State Register of Real Property Rights." %}
+                </li>
+                <li class="p-1">
+                    {% trans "Making changes to real estate in the State Register of Real Property Rights to Real Estate." %}
+                </li>
+                <li class="p-1">
+                    {% trans "Registration of legal entities." %}
+                </li>
+                <li class="p-1">
+                    {% trans "Making changes to the Unified State Register of Legal Entities, Individual Entrepreneurs and Public Organizations." %}
+                </li>
+                <li class="p-1">
+                    {% trans "Liquidation of legal entities." %}
+                </li>
+                <li class="p-1">
+                    {% trans "Obtaining information from the Unified State Register of Legal Entities, Individual Entrepreneurs, and Public Organizations." %}
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock content %}

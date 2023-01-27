@@ -1,0 +1,29 @@
+{% load static %}
+{% load i18n %}
+
+<footer class="fixed bottom-0 left-0 z-20 w-full p-3 bg-gray-300 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600 h-30">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">{% trans "Private notary of Kyiv Oleksandra Marchenko" %}</a>. {% trans "All rights reserved" %}
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+        {% for contact in contacts  %}
+            <li>
+                <a href="{{ contact.telegram }}"
+                   class="mr-4 md:mr-6 hover:text-blue-500"
+                   target="_blank">
+                    <i class="fa-brands fa-telegram fa-2xl img-rt img-rt:hover"></i>
+                </a>
+            </li>
+            <li>
+                <a href="{{ contact.whatsapp }}"
+                   class="mr-4 md:mr-6 hover:text-green-500"
+                   target="-_blank"><i class="fa-brands fa-whatsapp fa-2xl img-rt img-rt:hover"></i></a>
+            </li>
+            <li>
+                <a href="{{ contact.viber }}"
+                   class="mr-4 md:mr-6 hover:text-purple-500"
+                   target="_blank"><i class="fa-brands fa-viber fa-2xl img-rt img-rt:hover">
+                </i></a>
+            </li>
+        {% endfor %}
+    </ul>
+</footer>
