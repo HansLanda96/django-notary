@@ -158,3 +158,4 @@ migrations/
 __pycache__/
 .djlintrc
 .vscode/
+.sqlite3
