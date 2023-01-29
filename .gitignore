@@ -158,4 +158,4 @@ migrations/
 __pycache__/
 .djlintrc
 .vscode/
-.sqlite3
+notary.sqlite3
