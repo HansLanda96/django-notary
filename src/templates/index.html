@@ -14,14 +14,14 @@
             </div>
             <div class="bg-white dark:bg-slate-900">
                 <div class="p-5 mb-auto mt-auto max-w-lg max-h-screen">
-                    <div class="text-3xl uppercase mt-10">{{ notary.surname }} {{ notary.name }}</div>
-                    <div class="font-semibold mb-1">{% trans "Private notary" %}</div>
-                    <div class="font-semibold mb-5">{% trans "Kiyv city notary district" %}</div>
-                    <div class="font-medium">{{ notary.description|safe }}</div>
-                    <div class="text-xl uppercase font-semibold mt-10 mb-5">{% trans "Contact Information:" %}</div>
+                    <div class="font-semibold text-3xl uppercase mt-5">{{ notary.surname }} {{ notary.name }}</div>
+                    <div class="font-semibold mb-1 text-2xl mt-5">{% trans "Private notary" %}</div>
+                    <div class="font-semibold mb-5 text-2xl mt-2">{% trans "Kyiv city notary district" %}</div>
+                    <div class="font-base text-xl">{{ notary.description|safe }}</div>
+                    <div class="text-2xl uppercase font-semibold mt-10 mb-5">{% trans "Contact Information:" %}</div>
                     <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
                         {% for contact in contacts  %}
-                            <div class="font-medium">
+                            <div class="font-semibold text-lg">
                                 <i class="fa-solid fa-phone fa-2xl mr-2"></i>
                                 <span class="font-semibold">
                                     <a href="tel:{{ contact.phone }}">
@@ -32,7 +32,7 @@
                                     </a>
                                 </span>
                             </div>
-                            <div class="font-medium">
+                            <div class="font-semibold text-lg">
                                 <i class="fa-solid fa-envelope fa-2xl mr-2"></i>
                                 <span class="font-semibold">
                                     <a href="mailto:{{ contact.email }}">
@@ -43,7 +43,7 @@
                                     </a>
                                 </span>
                             </div>
-                            <div class="font-medium">
+                            <div class="font-semibold text-lg">
                                 <i class="fa-solid fa-location-dot fa-2xl mr-3.5"></i>
                                 <span class="font-semibold">
                                     <a href="{{ contact.mapurl }}" target="_blank">

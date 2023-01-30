@@ -62,7 +62,7 @@ msgid "Private notary"
 msgstr "Приватний нотаріус"
 
 #: templates/index.html:17
-msgid "Kiyv city notary district"
+msgid "Kyiv city notary district"
 msgstr "Київський міський нотаріальний округ"
 
 #: templates/index.html:19
